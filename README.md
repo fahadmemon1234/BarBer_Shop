@@ -2,7 +2,7 @@
 
 BarBer_Shop Website Clone Design For HTML, CSS, JAVASCRIPT
 
-View My Website: https://fahadmemon1234.github.io/Space-Dyna/
+View My Website: https://fahadmemon1234.github.io/BarBer_Shop/
 
 ![1](https://github.com/fahadmemon1234/BarBer_Shop/assets/110020126/ade4fa1b-c97b-45c2-bd07-4047c74afa0b)
 
