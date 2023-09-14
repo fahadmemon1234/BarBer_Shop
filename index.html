@@ -1,0 +1,667 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Barber Shop</title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script nonce="4c3ba63e-045c-4d57-94a1-ae559cfa477e">
+        (function(w, d) {
+            ! function(bg, bh, bi, bj) {
+                bg[bi] = bg[bi] || {};
+                bg[bi].executed = [];
+                bg.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                bg.zaraz.q = [];
+                bg.zaraz._f = function(bk) {
+                    return async function() {
+                        var bl = Array.prototype.slice.call(arguments);
+                        bg.zaraz.q.push({
+                            m: bk,
+                            a: bl
+                        })
+                    }
+                };
+                for (const bm of ["track", "set", "debug"]) bg.zaraz[bm] = bg.zaraz._f(bm);
+                bg.zaraz.init = () => {
+                    var bn = bh.getElementsByTagName(bj)[0],
+                        bo = bh.createElement(bj),
+                        bp = bh.getElementsByTagName("title")[0];
+                    bp && (bg[bi].t = bh.getElementsByTagName("title")[0].text);
+                    bg[bi].x = Math.random();
+                    bg[bi].w = bg.screen.width;
+                    bg[bi].h = bg.screen.height;
+                    bg[bi].j = bg.innerHeight;
+                    bg[bi].e = bg.innerWidth;
+                    bg[bi].l = bg.location.href;
+                    bg[bi].r = bh.referrer;
+                    bg[bi].k = bg.screen.colorDepth;
+                    bg[bi].n = bh.characterSet;
+                    bg[bi].o = (new Date).getTimezoneOffset();
+                    if (bg.dataLayer)
+                        for (const bt of Object.entries(Object.entries(dataLayer).reduce(((bu, bv) => ({ ...bu[1],
+                                ...bv[1]
+                            })), {}))) zaraz.set(bt[0], bt[1], {
+                            scope: "page"
+                        });
+                    bg[bi].q = [];
+                    for (; bg.zaraz.q.length;) {
+                        const bw = bg.zaraz.q.shift();
+                        bg[bi].q.push(bw)
+                    }
+                    bo.defer = !0;
+                    for (const bx of [localStorage, sessionStorage]) Object.keys(bx || {}).filter((bz => bz.startsWith("_zaraz_"))).forEach((by => {
+                        try {
+                            bg[bi]["z_" + by.slice(7)] = JSON.parse(bx.getItem(by))
+                        } catch {
+                            bg[bi]["z_" + by.slice(7)] = bx.getItem(by)
+                        }
+                    }));
+                    bo.referrerPolicy = "origin";
+                    bo.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(bg[bi])));
+                    bn.parentNode.insertBefore(bo, bn)
+                };
+                ["complete", "interactive"].includes(bh.readyState) ? zaraz.init() : bg.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        })(window, document);
+    </script>
+</head>
+
+<body>
+
+    <!-- <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/logo/loder.png" alt>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <header>
+
+        <div class="header-area header-transparent">
+            <div class="main-header header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li class="active"><a href="index.html">Home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="services.html">Services</a></li>
+                                            <li><a href="portfolio.html">Portfolio</a></li>                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="header-right-btn f-right d-none d-lg-block ml-30">
+                                    <a href="index.html" class="btn header-btn">became a member</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    </header>
+    <main>
+
+        <div class="slider-area position-relative fix">
+            <div class="slider-active">
+
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay="0.2s">with patrick potter</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Our Hair Style make your look elegance</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-8 col-lg-9 col-md-11 col-sm-10">
+                                <div class="hero__caption">
+                                    <span data-animation="fadeInUp" data-delay="0.2s">with patrick potter</span>
+                                    <h1 data-animation="fadeInUp" data-delay="0.5s">Our Hair Style make your look elegance</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stock-text">
+                <h2>Get More confident</h2>
+                <h2>Get More confident</h2>
+            </div>
+
+            <div class="thumb-content-box">
+                <div class="thumb-content">
+                    <h3>make an appointment now</h3>
+                    <a href="#"> <i class="fas fa-long-arrow-alt-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="about-area section-padding30 position-relative">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-11">
+
+                        <div class="about-img ">
+                            <img src="assets/img/gallery/about.png" alt>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="about-caption">
+
+                            <div class="section-tittle section-tittle3 mb-35">
+                                <span>About</span>
+                                <h2>52 Years Of Experience In Hair cut!</h2>
+                            </div>
+                            <p class="mb-30 pera-bottom">
+                                With a remarkable 52 years of hair cutting experience, our seasoned professionals bring unmatched expertise to each haircut. Trust us for precision, style, and a legacy of excellence in every hair transformation.</p>
+                            <p class="pera-top mb-50">50+ years mastering the art of hair cutting. Our scissors are a testament to timeless expertise, crafting exceptional styles with every snip.</p>
+                            <img src="assets/img/gallery/signature.png" alt>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-shape">
+                <img src="assets/img/gallery/about-shape.png" alt>
+            </div>
+        </section>
+
+
+        <section class="service-area pb-170">
+            <div class="container">
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle text-center mb-90">
+                            <span>Professional Services</span>
+                            <h2>Our Best services that we offering to you</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30 custom-hover">
+                            <div class="service-icon">
+                                <img src="assets/img/hair cut.jpg" width="100" height="100" style="border-radius: 50px; border: 3px solid #d19f68">
+                            </div>
+                            <br/>
+                            <div class="service-cap">
+                                <h4><a href="#">Stylish Hair Cut</a></h4>
+                                <p>A chic haircut showcasing trendy flair and modern aesthetics, elevating your overall style and confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption active text-center mb-30 custom-hover active">
+                            <div class="service-icon">
+                                <img src="assets/img/BodyMassage.jpg" width="100" height="100" style="border-radius: 50px; border: 3px solid white;">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Body Massage</a></h4>
+                                <p>Relaxing body massage: Blissful therapy to unwind, relieve tension, and rejuvenate your body and mind.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="services-caption text-center mb-30 custom-hover">
+                            <div class="service-icon">
+                                <img src="assets/img/Bread.jpg" width="100" height="100" style="border-radius: 50px; border: 3px solid #d19f68;">
+                            </div>
+                            <div class="service-cap">
+                                <h4><a href="#">Breard Style</a></h4>
+                                <p>A well-groomed facial statement, reflecting personality and enhancing appearance with carefully crafted facial hair.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="team-area pb-180">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-8 col-md-11 col-sm-11">
+                        <div class="section-tittle text-center mb-100">
+                            <span>Professional Teams</span>
+                            <h2>Our award winner hair cut exparts for you</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-active dot-style">
+
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team1.png" alt>
+                            </div>
+                            <div class="team-caption">
+                                <span>Master Barber</span>
+                                <h3><a href="#">Guy C. Pulido bks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team2.png" alt>
+                            </div>
+                            <div class="team-caption">
+                                <span>Color Expart</span>
+                                <h3><a href="#">Steve L. Nolan</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team3.png" alt>
+                            </div>
+                            <div class="team-caption">
+                                <span>Master Barber</span>
+                                <h3><a href="#">Edgar P. Mathis</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-80 text-center">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/team2.png" alt>
+                            </div>
+                            <div class="team-caption">
+                                <span>Master Barber</span>
+                                <h3><a href="#">Edgar P. Mathis</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="best-pricing section-padding2 position-relative">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="section-tittle mb-50">
+                            <span>Our Best Pricing</span>
+                            <h2>We provide best price<br> in the city!</h2>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li>Styling. . . . . . . . . . . . . . . . . . . . . . . . . . . . <span>$25</span></li>
+                                        <li>Styling + Color. . . . . . . . . . . . . . . . . . . <span>$65</span></li>
+                                        <li>Styling + Tint. . . . . . . . . . . . . . . . . . . . . .<span>$65</span></li>
+                                        <li> Semi-permanent wave. . . . . . . . . . . . .<span>$65</span></li>
+                                        <li> Cut + Styling. . . . . . . . . . . . . . . . . . . . . .<span>$63</span></li>
+                                        <li> Cut + Styling + Color. . . . . . . . . . . . . <span>$100</span></li>
+                                        <li> Cut + Styling + Tint. . . . . . . . . . . . . . . .<span>$100</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li>Cut. . . . . . . . . . . . . . . . . . . . . . . . . . . . .<span>$25</span></li>
+                                        <li>Shave. . . . . . . . . . . . . . . . . . . . . . . . . . <span>$65</span></li>
+                                        <li>Beard trim. . . . . . . . . . . . . . . . . . . . . . <span>$65</span></li>
+                                        <li>Cut + beard trim. . . . . . . . . . . . . . . . . <span>$65</span></li>
+                                        <li>Cut + shave. . . . . . . . . . . . . . . . . . . . . . .<span>$63</span></li>
+                                        <li>Clean up. . . . . . . . . . . . . . . . . . . . . . . . .<span>$100</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-img">
+                <img class="pricing-img1" src="assets/img/gallery/pricing1.png" alt>
+                <img class="pricing-img2" src="assets/img/gallery/pricing2.png" alt>
+            </div>
+        </div>
+
+
+<br/>
+
+        <div class="cut-details section-bg section-padding2" data-background="assets/img/gallery/section_bg02.png">
+            <div class="container">
+                <div class="cut-active dot-style">
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20">
+<image src="assets/img/Harry.jpg" width="50px" height="50px" style="border-radius: 50%;"/>
+                        </div>
+                        <div class="cut-descriptions">
+                            <p>Outstanding barber shop! Professional staff, trendy cuts, and a relaxing vibe. Always leave feeling sharp and confident. Highly recommend this grooming haven!</p>
+                            <span style="font-weight: bold;">Harry</span>
+                        </div>
+                    </div>
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20">
+                            <image src="assets/img/Sara.jpg" width="50px" height="50px" style="border-radius: 50%;"/>
+                        </div>
+                        <div class="cut-descriptions">
+                            <p>This barber shop is a hidden gem! Skilled barbers, trendy atmosphere, and impeccable service. My hair has never looked better. A must-visit grooming haven!</p>
+                            <span>Sarah</span>
+                        </div>
+                    </div>
+                    <div class="single-cut">
+                        <div class="cut-icon mb-20">
+                            <image src="assets/img/Dave.jpeg" width="50px" height="50px" style="border-radius: 50%;"/>
+
+                        </div>
+                        <div class="cut-descriptions">
+                            <p>A top-notch barber shop! Talented barbers, stylish décor, and a friendly vibe. Every visit leaves me looking sharp and feeling confident. Simply the best in town!</p>
+                            <span>Dave</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="gallery-area section-padding30">
+            <div class="container">
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-tittle text-center mb-100">
+                            <span>our image gellary</span>
+                            <h2>some images from our barber shop</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery1.png);"></div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery2.png);"></div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery3.png);"></div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="box snake mb-30">
+                            <div class="gallery-img " style="background-image: url(assets/img/gallery/gallery4.png);"></div>
+                            <div class="overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+        
+
+    </main>
+    <footer>
+
+        <div class="footer-area section-bg" data-background="assets/img/gallery/footer_bg.png">
+            <div class="container">
+                <div class="footer-top footer-padding">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-4 col-md-5 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt></a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p class="info1">Receive updates and latest news direct from Simply enter.</p>
+                                    </div>
+                                </div>
+                                <div class="footer-number">
+                                    <h4><span>+564 </span>7885 3222</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Location </h4>
+                                    <ul>
+                                        <li><a href="#">Advanced</a></li>
+                                        <li><a href="#"> Management</a></li>
+                                        <li><a href="#">Corporate</a></li>
+                                        <li><a href="#">Customer</a></li>
+                                        <li><a href="#">Information</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Explore</h4>
+                                    <ul>
+                                        <li><a href="#">Cookies</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Proparties</a></li>
+                                        <li><a href="#">Licenses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Location</h4>
+                                    <div class="footer-pera">
+                                        <p class="info1">Subscribe now to get daily updates</p>
+                                    </div>
+                                </div>
+
+                                <div class="footer-form">
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part" novalidate="true">
+                                            <input type="email" name="email" id="email" placeholder=" Email Address " class="placeholder hide-on-focus" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your email address'">
+                                            <div class="form-icon">
+                                                <button type="submit" onclick="send()" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm submit">Send</button>
+                                                <!-- <input class="email_icon newsletter-submit button-contactForm button submit" type="submit" value="Send" id="newsletter-submit"> -->
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="footer-copy-right">
+                                <p style="font-weight: 600;">
+                                    Copyright © 2023 Brber Team's. All rights reserved.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+
+                            <div class="footer-social f-right">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fas fa-globe"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="back-top">
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+<!-- Font-Awesome icon cdn  original-->
+<script src="https://kit.fontawesome.com/c58aa2b467.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <script src="./assets/js/gijgo.min.js"></script>
+
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="assets//js//sweetalert.min.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon='{"rayId":"803dccec9cc25bfa","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.8.0","si":100}'
+        crossorigin="anonymous"></script>
+
+
+        <script>
+
+function send() {
+    var txtEmail = document.getElementById("email").value;
+
+    if (txtEmail == '') {
+        swal({
+            title: "Fields Empty!",
+            text: "Please check the missing field!",
+            icon: "warning",
+            button: "Close!",
+        });
+    } else {
+        swal({
+            title: "Good job!",
+            text: "Your message has been sent. Thank you!",
+            icon: "success",
+            button: "Close!",
+        });
+    }
+}
+
+            </script>
+
+
+<script>
+    $(document).ready(function () {
+        $('#navigation li a').click(function () {
+            // Remove the "active" class from all <li> elements
+            $('#navigation li').removeClass('active');
+            
+            // Add the "active" class to the parent <li> of the clicked <a>
+            $(this).parent('li').addClass('active');
+        });
+    });
+</script>
+</body>
+
+</html>
